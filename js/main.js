@@ -1,1 +1,3 @@
-console.log("hi there!");
+$(document).ready(()=>{
+    $('h1').addClass('showUp');
+});

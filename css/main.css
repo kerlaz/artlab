@@ -2,3 +2,11 @@ body {
     background-color: rgba(0,0,0,0.5);
     font-family: "TT Norms", sans-serif;
 }
+h1 {
+    transition: all 1s ease-in-out;
+    transform: translateX(100%);
+}
+
+h1.showUp {
+    transform: translateX(0);
+}
