@@ -7,7 +7,8 @@ $(document).ready(()=>{
     $('.menu-icon').bind('click',function () {
         $(this).toggleClass('menu-open');
     });
-    window.onscroll = ()=>{changeNav();};
+    window.onscroll = ()=>{changeNav()};
+    setInterval(()=>{$('#main-slider .item').toggleClass('on-top')},6000);
 });
 function changeNav() {
     if(window.pageYOffset > 100){
