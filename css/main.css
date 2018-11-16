@@ -27,7 +27,7 @@ body {
     .logo {
         width: 51px;
         height: 46px;
-        transition: 0.2s;
+        transition: 0.1s;
     }
     .transparent .brand {
         padding: 16px;
@@ -259,6 +259,13 @@ img.svg {
     padding: 0 7px;
     font-size: 10px;
 }
+.page-heading h2>small {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 12px;
+    margin-left: 4px;
+}
 .page article {
     margin: 16px 16px 32px;
 }
@@ -291,9 +298,14 @@ img.svg {
     text-transform: uppercase;
     margin-left: 16px;
 }
+.page .addition .text.small {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: none;
+}
 .action-btn {
     font-size: 14px;
-    font-weight: 800;
     text-transform: uppercase;
     line-height: 16px;
     padding: 12px 20px;
@@ -303,6 +315,12 @@ img.svg {
 .action-btn.light {
     background-color: #ffffff;
     color: #5910a8;
+    font-weight: 800;
+}
+.action-btn.dark {
+    background-color: #5910a8;
+    color: #ffffff;
+    font-weight: 700;
 }
 .facts {
     text-transform: uppercase;
@@ -329,6 +347,67 @@ img.svg {
     width: 100%;
 }
 #facts {
-    background: #2d0652;
+    /*background: #2d0652;*/
     color: #ffffff;
+    background: #2d0652 url("../img/facts-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+#achievements {
+
+}
+.achievement {
+    padding: 0 16px;
+    margin: 16px 0;
+    text-transform: uppercase;
+}
+.achievement:first-of-type {
+    margin-top: 32px;
+}
+.achievement small,
+.achievement span {
+    display: block;
+}
+.achievement small {
+    font-size: 11px;
+}
+.achievement span {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.show-cards {
+    width: 100%;
+    padding: 5px;
+    margin-top: 16px;
+}
+.show-cards::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+    height: 40px;
+}
+.show-card {
+    position: relative;
+    color: #ffffff;
+    margin: 5px;
+    height: calc((50vw - 15px) / 145 * 170);
+    width: calc(50% - 10px);
+    background-color: #2d0652;
+    float: left;
+}
+.show-card.wide {
+    background-color: #4b0320;
+    width: calc(100% - 10px);
+}
+.show-card h5 {
+    position: absolute;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 11px 8px;
+    margin: 0;
+    bottom: 0;
+    right: 0;
 }
