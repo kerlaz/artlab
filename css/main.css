@@ -1,6 +1,7 @@
 body {
     background-color: rgba(0,0,0,0.0);
     font-family: "TT Norms", sans-serif;
+    color: #10032d;
 }
 @media screen and (max-width: 640px) {
     .mobile-nav {
@@ -165,6 +166,9 @@ section.page {
     box-sizing: border-box;
     /*border-bottom: 1px solid rgba(0,0,0,0.5);*/
 }
+section.page.m-height {
+    min-height: auto;
+}
 /* svg */
 img.svg {
     display: block;
@@ -224,4 +228,107 @@ img.svg {
 }
 .menu-bar::after {
     transform: translateY(7px);
+}
+.page-heading {
+    text-transform: uppercase;
+    padding: 40px 9px 9px;
+    color: #10032d;
+}
+.page-heading.dark {
+    color: #ffffff;
+}
+.page-heading h2 {
+    font-size: 26px;
+}
+.page-heading h2 span{
+    font-weight: 800;
+    font-size: inherit;
+    padding: 0 7px;
+    display: inline-block;
+}
+.page-heading h2 strong {
+    font-weight: 800;
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #5910a8;
+    padding: 7px;
+    display: inline-block;
+}
+.page-heading small {
+    display: block;
+    padding: 0 7px;
+    font-size: 10px;
+}
+.page article {
+    margin: 16px 16px 32px;
+}
+.page article p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+.page .addition {
+    margin: 48px 16px 80px;
+}
+.page .addition::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+}
+.page .addition div,
+.page .addition button {
+    display: block;
+    float: left;
+}
+.page .addition .text {
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+.action-btn {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding: 12px 20px;
+    border: 2px solid #5910a8;
+    border-radius: 22px;
+}
+.action-btn.light {
+    background-color: #ffffff;
+    color: #5910a8;
+}
+.facts {
+    text-transform: uppercase;
+    width: 100%;
+    border: 16px solid transparent;
+}
+.facts tr td:first-child {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 3.64;
+}
+.facts tr td:last-child {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 2.22;
+    text-align: right;
+}
+.facts:after {
+    display: block;
+    content: '';
+    float: none;
+    clear: both;
+    height: 40px;
+    width: 100%;
+}
+#facts {
+    background: #2d0652;
+    color: #ffffff;
 }

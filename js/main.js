@@ -1,7 +1,3 @@
-let state = {
-    isFirstPage: true
-};
-
 $(document).ready(()=>{
     // code here
     $('.menu-icon').bind('click',function () {
@@ -11,7 +7,7 @@ $(document).ready(()=>{
     setInterval(()=>{$('#main-slider .item').toggleClass('on-top')},6000);
 });
 function changeNav() {
-    if(window.pageYOffset > 100){
+    if(window.pageYOffset > 10){
         $('.mobile-nav').removeClass('transparent')
     } else {
         $('.mobile-nav').addClass('transparent')
