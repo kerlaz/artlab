@@ -3,6 +3,7 @@ $(document).ready(()=>{
     $('.menu-icon').bind('click',function () {
         $(this).toggleClass('menu-open');
     });
+    changeNav();
     window.onscroll = ()=>{changeNav()};
     setInterval(()=>{$('#main-slider .item').toggleClass('on-top')},6000);
 });
