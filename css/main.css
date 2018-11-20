@@ -2,6 +2,8 @@ body {
     background-color: rgba(0,0,0,0.0);
     font-family: "TT Norms", sans-serif;
     color: #10032d;
+    margin: 0;
+    padding: 0;
 }
 @media screen and (max-width: 640px) {
     .mobile-nav {
@@ -181,6 +183,7 @@ img.svg {
     padding: 16px;
     position: relative;
     float: right;
+    box-sizing: border-box;
 }
 
 .main-screen .menu-bar,
@@ -379,6 +382,7 @@ img.svg {
     width: 100%;
     padding: 5px;
     margin-top: 16px;
+    box-sizing: border-box;
 }
 .show-cards::after {
     content: '';
