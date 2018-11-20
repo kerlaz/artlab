@@ -415,3 +415,84 @@ img.svg {
     bottom: 0;
     right: 0;
 }
+.form-wrapper {
+    margin: 16px;
+    box-sizing: border-box;
+}
+#callback-form label,
+#callback-form input,
+#callback-form textarea {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+}
+#callback-form input,
+#callback-form textarea {
+    border-bottom: 2px solid rgba(56, 16, 96, 0.4);
+    padding: 12px 0;
+}
+.form-group {
+    position: relative;
+    height: 38px;
+    margin-bottom: 20px;
+}
+.form-group.text-field {
+    height: auto;
+}
+.form-group > label {
+    position: absolute;
+    top: 0;
+    height: 38px;
+    font-size: 12px;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 9;
+    transition: 0.2s;
+}
+.form-group > input {
+    position: absolute;
+    top: 0;
+    height: 38px;
+    font-size: 12px;
+    font-family: "TT Norms", sans-serif;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 10;
+    background-color: transparent;
+}
+.form-group > textarea {
+    position: absolute;
+    top: 0;
+    height: auto;
+    font-size: 12px;
+    font-family: "TT Norms", sans-serif;
+    font-weight: normal;
+    z-index: 10;
+    background-color: transparent;
+    resize: none;
+}
+#callback-form input:focus,
+#callback-form input:active,
+#callback-form textarea:focus,
+#callback-form textarea:active {
+    border-bottom: 2px solid rgba(89, 16, 168, 1);
+    outline: none;
+}
+input:focus ~ label,
+input:active ~ label,
+input.not-empty ~ label,
+textarea:focus ~ label,
+textarea:active ~ label,
+textarea.not-empty ~ label{
+    transform: translateY(-20px);
+    transition: 0.2s;
+    z-index: 11;
+    font-size: 9px;
+    opacity: 0.8;
+}
+.form-group.form-buttons {
+    padding: 36px 0;
+}

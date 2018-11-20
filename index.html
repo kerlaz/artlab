@@ -55,7 +55,7 @@
         </header>
         <article>
             <p>Краткий текст о нашем призвании <strong>впечатлять, вдохновлять</strong> и дарить чувство вкуса жизни.
-            А так же о трепетном отношении к нуждам клиентов и стремлении максимально облегчить их жизнь</p>
+                А так же о трепетном отношении к нуждам клиентов и стремлении максимально облегчить их жизнь</p>
         </article>
         <div class="addition">
             <button class="action-btn light">наши шоу</button>
@@ -114,7 +114,9 @@
     </section>
     <section class="page" id="show">
         <header class="page-heading">
-            <h2><span>наша</span><strong>страсть</strong><small>это <br />шоу</small></h2>
+            <h2><span>наша</span><strong>страсть</strong>
+                <small>это <br/>шоу</small>
+            </h2>
         </header>
         <div class="show-cards">
             <div class="show-card">
@@ -143,11 +145,34 @@
             <img src="img/clients-1.jpg" alt="brands" style="width: 100%; padding: 7px; box-sizing: border-box;">
         </div>
     </section>
-    <section class="page" id="callback">
+    <section class="page m-height" id="callback">
         <header class="page-heading">
             <h2><span>заполните поля и получите</span><strong>скидку 5%</strong></h2>
-            <small>приготовьтесь к быстрому ответу.<br />кто-то из нас работает даже на выходных</small>
+            <small>приготовьтесь к быстрому ответу.<br/>кто-то из нас работает даже на выходных</small>
         </header>
+        <div class="form-wrapper">
+            <form action="#" method="get" id="callback-form">
+                <div class="form-group">
+                    <input name="name" id="name" type="text" required>
+                    <label for="name">имя</label>
+                </div>
+                <div class="form-group">
+                    <input name="email" id="email" type="email" required>
+                    <label for="email">email</label>
+                </div>
+                <div class="form-group">
+                    <input name="tel" id="tel" type="tel" required>
+                    <label for="tel">телефон</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" rows="2"></textarea>
+                    <label for="message">сообщение <small>(необязательно)</small></label>
+                </div>
+                <div class="form-group form-buttons">
+                    <button type="submit" class="action-btn light">отправить</button>
+                </div>
+            </form>
+        </div>
     </section>
 </div>
 
