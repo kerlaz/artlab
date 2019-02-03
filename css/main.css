@@ -15,6 +15,7 @@ body {
         position: fixed;
         transition: 0.2s;
         z-index: 999;
+        top: 0;
     }
     .mobile-nav.transparent {
         background-color: transparent;
@@ -278,20 +279,24 @@ img.svg {
     line-height: 1.5;
     opacity: 0.8;
 }
-.page .addition {
+.page .addition{
     margin: 48px 16px 80px;
 }
+.nav-box .addition::after,
 .page .addition::after {
     content: '';
     display: block;
     float: none;
     clear: both;
 }
+.nav-box .addition div,
+.nav-box .addition button,
 .page .addition div,
 .page .addition button {
     display: block;
     float: left;
 }
+.nav-box .addition .text,
 .page .addition .text {
     border: 2px solid transparent;
     font-size: 16px;
@@ -301,6 +306,7 @@ img.svg {
     text-transform: uppercase;
     margin-left: 16px;
 }
+.nav-box .addition .text.small,
 .page .addition .text.small {
     font-size: 11px;
     font-weight: 400;
@@ -495,4 +501,87 @@ textarea.not-empty ~ label{
 }
 .form-group.form-buttons {
     padding: 36px 0;
+}
+
+.nav-open {
+    background-color: rgb(255,255,255);
+    height: 100%;
+}
+.nav-open .nav-box {
+    display: block;
+}
+.nav-box.primary {
+    margin-top: 120px;
+}
+.nav-box {
+    padding: 8px 16px;
+    display: none;
+}
+.nav-box > a {
+    display: block;
+    text-decoration: none;
+}
+.nav-box.primary > a {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 8px 0;
+    color: #10032d;
+}
+.nav-box.secondary > a {
+    padding: 4px 0;
+}
+.nav-box.footer {
+    margin-top: 24px;
+}
+.first-screen {
+    margin-top: 120px;
+    text-align: center;
+}
+.page.hover-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+.page.hover-page.visible {
+    display: block;
+}
+.profile {
+    height: 100%;
+}
+.portrait {
+    height: 100vw;
+    background-color: #2d0652;
+}
+.story {
+    background-color: #1e0538;
+    color: white;
+    height: 100%;
+}
+.sub-nav {
+    position: fixed;
+    width: 100%;
+    top: 56px;
+    padding-top: 14px;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 99;
+}
+.sub-nav .show-item {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.sub-nav .show-item .circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(89, 16, 168, 1);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.sub-nav .show-item .title {
+    font-size: 10px;
+    font-weight: 400;
 }
